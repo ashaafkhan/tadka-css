@@ -3,163 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tadka-css Demo</title>
+    <title>tadka-css Showcase</title>
     <script src="https://unpkg.com/tadka-css/dist/tadka-css.js"></script>
   </head>
-  <body class="tadka-bg-slate-50 tadka-text-slate-900 tadka-leading-relaxed">
-    <header class="tadka-sticky tadka-top-0 tadka-z-50 tadka-bg-white tadka-border tadka-border-slate-200 tadka-shadow-sm">
+  <body class="tadka-bg-slate-100 tadka-text-slate-900 tadka-leading-relaxed">
+    <header class="tadka-sticky tadka-top-0 tadka-z-50 tadka-bg-white tadka-shadow-sm tadka-border tadka-border-slate-200">
       <nav class="tadka-max-w-7xl tadka-mx-auto tadka-px-4 tadka-py-3 tadka-flex tadka-items-center tadka-justify-between">
-        <div class="tadka-flex tadka-items-center tadka-gap-3">
-          <div class="tadka-size-10 tadka-rounded-full tadka-bg-orange-500 tadka-text-white tadka-flex tadka-items-center tadka-justify-center tadka-font-bold">T</div>
-          <span class="tadka-text-xl tadka-font-bold">tadka-css</span>
-        </div>
+        <a href="#top" class="tadka-flex tadka-items-center tadka-gap-3 tadka-no-underline">
+          <div class="tadka-size-10 tadka-rounded-full tadka-bg-orange-600 tadka-text-white tadka-flex tadka-items-center tadka-justify-center tadka-font-black">T</div>
+          <span class="tadka-text-xl tadka-font-black tadka-text-slate-900">tadka-css</span>
+        </a>
         <button id="menu-btn" class="tadka-md:hidden tadka-p-2 tadka-rounded tadka-border tadka-border-slate-300">Menu</button>
-        <ul id="menu" class="tadka-hidden tadka-md:flex tadka-gap-5 tadka-text-sm tadka-font-medium">
+        <ul class="tadka-hidden tadka-md:flex tadka-gap-5 tadka-text-sm tadka-font-semibold">
           <li><a href="#install" class="tadka-text-slate-600 tadka-hover:text-orange-600">Install</a></li>
-          <li><a href="#colors" class="tadka-text-slate-600 tadka-hover:text-orange-600">Colors</a></li>
-          <li><a href="#layout" class="tadka-text-slate-600 tadka-hover:text-orange-600">Layout</a></li>
-          <li><a href="#forms" class="tadka-text-slate-600 tadka-hover:text-orange-600">Forms</a></li>
-          <li><a href="#footer" class="tadka-text-slate-600 tadka-hover:text-orange-600">Links</a></li>
+          <li><a href="#components" class="tadka-text-slate-600 tadka-hover:text-orange-600">Components</a></li>
+          <li><a href="#palette" class="tadka-text-slate-600 tadka-hover:text-orange-600">Palette</a></li>
+          <li><a href="#playground" class="tadka-text-slate-600 tadka-hover:text-orange-600">Playground</a></li>
         </ul>
       </nav>
       <ul id="mobile-menu" class="tadka-hidden tadka-px-4 tadka-pb-4 tadka-bg-white tadka-flex tadka-flex-col tadka-gap-2">
         <li><a href="#install" class="tadka-block tadka-py-2">Install</a></li>
-        <li><a href="#colors" class="tadka-block tadka-py-2">Colors</a></li>
-        <li><a href="#layout" class="tadka-block tadka-py-2">Layout</a></li>
-        <li><a href="#forms" class="tadka-block tadka-py-2">Forms</a></li>
+        <li><a href="#components" class="tadka-block tadka-py-2">Components</a></li>
+        <li><a href="#palette" class="tadka-block tadka-py-2">Palette</a></li>
+        <li><a href="#playground" class="tadka-block tadka-py-2">Playground</a></li>
       </ul>
     </header>
 
-    <main class="tadka-max-w-7xl tadka-mx-auto tadka-p-4 tadka-md:p-8 tadka-flex tadka-flex-col tadka-gap-16">
-      <section class="tadka-bg-gradient-to-r tadka-from-orange-100 tadka-to-yellow-100 tadka-rounded-2xl tadka-p-8 tadka-md:p-14 tadka-shadow-lg">
-        <h1 class="tadka-text-4xl tadka-md:text-6xl tadka-font-black tadka-leading-tight tadka-text-orange-900">Add spice to your styles</h1>
-        <p class="tadka-text-lg tadka-md:text-xl tadka-text-orange-800 tadka-mt-4">A utility-first CSS engine in vanilla JavaScript. Zero CSS files. Zero runtime dependencies.</p>
-        <div class="tadka-mt-6 tadka-flex tadka-gap-4 tadka-flex-wrap">
-          <a href="#install" class="tadka-px-6 tadka-py-3 tadka-rounded-lg tadka-bg-orange-600 tadka-text-white tadka-font-semibold tadka-hover:bg-orange-700">Get Started</a>
-          <a href="#playground" class="tadka-px-6 tadka-py-3 tadka-rounded-lg tadka-border tadka-border-orange-400 tadka-text-orange-800 tadka-font-semibold tadka-hover:bg-orange-50">Try Playground</a>
+    <main id="top" class="tadka-max-w-7xl tadka-mx-auto tadka-px-4 tadka-py-8 tadka-md:p-8 tadka-flex tadka-flex-col tadka-gap-8">
+      <section class="tadka-bg-gradient-to-r tadka-from-orange-200 tadka-to-amber-100 tadka-rounded-3xl tadka-shadow-xl tadka-p-8 tadka-md:p-12">
+        <div class="tadka-grid tadka-grid-cols-1 tadka-md:grid-cols-2 tadka-gap-8 tadka-items-center">
+          <div class="tadka-flex tadka-flex-col tadka-gap-4">
+            <p class="tadka-text-sm tadka-font-bold tadka-uppercase tadka-text-orange-800">Utility-first CSS engine</p>
+            <h1 class="tadka-text-4xl tadka-md:text-6xl tadka-font-black tadka-leading-tight tadka-text-orange-900">Add spice to every div.</h1>
+            <p class="tadka-text-lg tadka-text-orange-900">Write class names, skip CSS files, and ship quickly. Vanilla JS, zero runtime dependencies.</p>
+            <div class="tadka-flex tadka-gap-3 tadka-flex-wrap tadka-mt-2">
+              <a href="#install" class="tadka-bg-orange-600 tadka-text-white tadka-px-5 tadka-py-3 tadka-rounded-lg tadka-font-semibold tadka-hover:bg-orange-700">Start in 10 seconds</a>
+              <a href="#playground" class="tadka-bg-white tadka-border tadka-border-orange-300 tadka-text-orange-800 tadka-px-5 tadka-py-3 tadka-rounded-lg tadka-font-semibold tadka-hover:bg-orange-50">Open playground</a>
+            </div>
+          </div>
+          <div class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-3">
+            <div class="tadka-text-sm tadka-font-semibold tadka-text-slate-500">Before</div>
+            <pre class="tadka-bg-slate-900 tadka-text-slate-200 tadka-rounded-lg tadka-p-3 tadka-overflow-auto"><code>&lt;div style="padding:16px;background:#ea580c;color:#fff"&gt;
+  Hello
+&lt;/div&gt;</code></pre>
+            <div class="tadka-text-sm tadka-font-semibold tadka-text-slate-500">After</div>
+            <pre class="tadka-bg-slate-900 tadka-text-green-300 tadka-rounded-lg tadka-p-3 tadka-overflow-auto"><code>&lt;div class="tadka-p-4 tadka-bg-orange-600 tadka-text-white"&gt;
+  Hello
+&lt;/div&gt;</code></pre>
+          </div>
         </div>
       </section>
 
-      <section id="install" class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6">
-        <h2 class="tadka-text-2xl tadka-font-bold">Installation</h2>
-        <pre class="tadka-mt-4 tadka-bg-slate-900 tadka-text-green-300 tadka-p-4 tadka-rounded-lg tadka-overflow-auto"><code>npm install tadka-css
-
-&lt;script src="https://unpkg.com/tadka-css/dist/tadka-css.js"&gt;&lt;/script&gt;
-
-import TadkaCSS from "tadka-css";
+      <section id="install" class="tadka-grid tadka-grid-cols-1 tadka-md:grid-cols-3 tadka-gap-4">
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-5 tadka-flex tadka-flex-col tadka-gap-2">
+          <h2 class="tadka-text-lg tadka-font-bold">Install</h2>
+          <pre class="tadka-bg-slate-900 tadka-text-green-300 tadka-p-3 tadka-rounded tadka-overflow-auto"><code>npm i tadka-css</code></pre>
+        </article>
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-5 tadka-flex tadka-flex-col tadka-gap-2">
+          <h2 class="tadka-text-lg tadka-font-bold">CDN</h2>
+          <pre class="tadka-bg-slate-900 tadka-text-green-300 tadka-p-3 tadka-rounded tadka-overflow-auto"><code>&lt;script src="https://unpkg.com/tadka-css/dist/tadka-css.js"&gt;&lt;/script&gt;</code></pre>
+        </article>
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-5 tadka-flex tadka-flex-col tadka-gap-2">
+          <h2 class="tadka-text-lg tadka-font-bold">Initialize</h2>
+          <pre class="tadka-bg-slate-900 tadka-text-green-300 tadka-p-3 tadka-rounded tadka-overflow-auto"><code>import TadkaCSS from "tadka-css";
 TadkaCSS.init();</code></pre>
+        </article>
       </section>
 
-      <section id="colors" class="tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Color Palette Grid</h2>
-        <p class="tadka-text-slate-600">22 color families × 11 shades generated by the engine palette.</p>
-        <div id="palette-grid" class="tadka-grid tadka-grid-cols-2 tadka-sm:grid-cols-3 tadka-md:grid-cols-6 tadka-xl:grid-cols-11 tadka-gap-2"></div>
+      <section id="components" class="tadka-grid tadka-grid-cols-1 tadka-md:grid-cols-2 tadka-gap-5">
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+          <h3 class="tadka-text-2xl tadka-font-black">Type + Spacing</h3>
+          <p class="tadka-text-sm tadka-text-slate-500">Typography scale and spacing rhythm.</p>
+          <div class="tadka-bg-slate-100 tadka-rounded-lg tadka-p-6 tadka-flex tadka-flex-col tadka-gap-2">
+            <p class="tadka-text-xs">text-xs micro label</p>
+            <p class="tadka-text-sm">text-sm supporting text</p>
+            <p class="tadka-text-lg tadka-font-semibold">text-lg semibold</p>
+            <p class="tadka-text-3xl tadka-font-black">text-3xl headline</p>
+          </div>
+          <div class="tadka-bg-blue-100 tadka-rounded-lg tadka-p-6">tadka-p-6 container</div>
+        </article>
+
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+          <h3 class="tadka-text-2xl tadka-font-black">Buttons + States</h3>
+          <p class="tadka-text-sm tadka-text-slate-500">Hover, focus, active and disabled behavior.</p>
+          <div class="tadka-flex tadka-flex-wrap tadka-gap-3">
+            <button class="tadka-bg-orange-600 tadka-text-white tadka-rounded-lg tadka-px-4 tadka-py-2 tadka-font-semibold tadka-hover:bg-orange-700 tadka-active:scale-95">Primary</button>
+            <button class="tadka-bg-white tadka-border tadka-border-slate-300 tadka-rounded-lg tadka-px-4 tadka-py-2 tadka-font-semibold tadka-hover:bg-slate-100">Secondary</button>
+            <button class="tadka-bg-emerald-600 tadka-text-white tadka-rounded-lg tadka-px-4 tadka-py-2 tadka-ring-2">Ring</button>
+            <button disabled class="tadka-bg-slate-300 tadka-text-slate-600 tadka-rounded-lg tadka-px-4 tadka-py-2 tadka-cursor-not-allowed">Disabled</button>
+          </div>
+          <input class="tadka-w-full tadka-border tadka-rounded-lg tadka-p-3 tadka-focus:ring-2 tadka-focus:ring-orange-500 tadka-focus:outline-none" placeholder="Focus me" />
+        </article>
       </section>
 
-      <section class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-3">
-        <h2 class="tadka-text-2xl tadka-font-bold">Typography Showcase</h2>
-        <p class="tadka-text-xs">text-xs</p>
-        <p class="tadka-text-sm">text-sm</p>
-        <p class="tadka-text-base">text-base</p>
-        <p class="tadka-text-lg">text-lg</p>
-        <p class="tadka-text-2xl tadka-font-semibold">text-2xl semibold</p>
-        <p class="tadka-text-4xl tadka-font-black tadka-uppercase">text-4xl black uppercase</p>
-        <p class="tadka-underline">underline</p>
-      </section>
-
-      <section class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6">
-        <h2 class="tadka-text-2xl tadka-font-bold">Spacing Visual</h2>
-        <div class="tadka-mt-4 tadka-bg-blue-100 tadka-p-8">p-8
-          <div class="tadka-bg-blue-300 tadka-p-4">nested p-4</div>
+      <section id="palette" class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+        <div class="tadka-flex tadka-items-center tadka-justify-between tadka-flex-wrap tadka-gap-2">
+          <h3 class="tadka-text-2xl tadka-font-black">Color Gallery</h3>
+          <p class="tadka-text-sm tadka-text-slate-500">Hover swatches for motion feedback.</p>
         </div>
-        <div class="tadka-mt-4 tadka-bg-emerald-100 tadka-mx-auto tadka-w-1/2 tadka-p-4">mx-auto + w-1/2</div>
+        <div id="palette-grid" class="tadka-grid tadka-grid-cols-2 tadka-sm:grid-cols-4 tadka-md:grid-cols-8 tadka-gap-3"></div>
       </section>
 
-      <section id="layout" class="tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Layout Gallery</h2>
-        <div class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-4 tadka-flex tadka-justify-between tadka-items-center">
-          <div class="tadka-bg-orange-200 tadka-p-3 tadka-rounded">A</div>
-          <div class="tadka-bg-orange-300 tadka-p-3 tadka-rounded">B</div>
-          <div class="tadka-bg-orange-400 tadka-p-3 tadka-rounded">C</div>
-        </div>
-        <div class="tadka-grid tadka-grid-cols-2 tadka-md:grid-cols-4 tadka-gap-3">
-          <div class="tadka-bg-indigo-100 tadka-p-4 tadka-rounded">col</div>
-          <div class="tadka-bg-indigo-200 tadka-p-4 tadka-rounded">col</div>
-          <div class="tadka-bg-indigo-300 tadka-p-4 tadka-rounded">col</div>
-          <div class="tadka-bg-indigo-400 tadka-p-4 tadka-rounded">col</div>
-        </div>
+      <section class="tadka-grid tadka-grid-cols-1 tadka-md:grid-cols-2 tadka-gap-5">
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+          <h3 class="tadka-text-2xl tadka-font-black">Layout + Responsive</h3>
+          <div class="tadka-grid tadka-grid-cols-2 tadka-gap-3">
+            <div class="tadka-bg-indigo-100 tadka-rounded tadka-p-3">grid</div>
+            <div class="tadka-bg-indigo-200 tadka-rounded tadka-p-3">grid</div>
+            <div class="tadka-bg-indigo-300 tadka-rounded tadka-p-3">grid</div>
+            <div class="tadka-bg-indigo-400 tadka-rounded tadka-p-3">grid</div>
+          </div>
+          <div class="tadka-w-full tadka-lg:w-1/2 tadka-xl:w-1/4 tadka-bg-lime-200 tadka-rounded tadka-p-3">w-full lg:w-1/2 xl:w-1/4</div>
+        </article>
+
+        <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+          <h3 class="tadka-text-2xl tadka-font-black">Motion</h3>
+          <div class="tadka-flex tadka-gap-4 tadka-flex-wrap">
+            <div class="tadka-size-14 tadka-rounded-full tadka-bg-rose-400 tadka-animate-spin"></div>
+            <div class="tadka-size-14 tadka-rounded-full tadka-bg-cyan-400 tadka-animate-pulse"></div>
+            <div class="tadka-size-14 tadka-rounded-full tadka-bg-amber-400 tadka-animate-bounce"></div>
+            <div class="tadka-size-14 tadka-rounded-full tadka-bg-violet-400 tadka-animate-ping"></div>
+          </div>
+          <div class="tadka-flex tadka-gap-3 tadka-flex-wrap">
+            <div class="tadka-size-16 tadka-bg-sky-200 tadka-rounded tadka-scale-110 tadka-flex tadka-items-center tadka-justify-center">scale</div>
+            <div class="tadka-size-16 tadka-bg-sky-300 tadka-rounded tadka-rotate-12 tadka-flex tadka-items-center tadka-justify-center">rotate</div>
+            <div class="tadka-size-16 tadka-bg-sky-400 tadka-rounded tadka-translate-y-2 tadka-flex tadka-items-center tadka-justify-center">move</div>
+          </div>
+        </article>
       </section>
 
-      <section class="tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Cards and Buttons</h2>
-        <div class="tadka-grid tadka-grid-cols-1 tadka-md:grid-cols-3 tadka-gap-4">
-          <article class="tadka-bg-white tadka-rounded-lg tadka-shadow-sm tadka-p-4">shadow-sm</article>
-          <article class="tadka-bg-white tadka-rounded-xl tadka-shadow-lg tadka-p-4">shadow-lg</article>
-          <article class="tadka-bg-white tadka-rounded-2xl tadka-shadow-2xl tadka-p-4">shadow-2xl</article>
-        </div>
+      <section class="tadka-bg-white tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
+        <h3 class="tadka-text-2xl tadka-font-black">Custom Utilities</h3>
+        <p class="tadka-text-slate-600">These are injected through <span class="tadka-font-semibold">TadkaCSS.setConfig()</span>.</p>
         <div class="tadka-flex tadka-flex-wrap tadka-gap-3">
-          <button class="tadka-px-4 tadka-py-2 tadka-rounded tadka-bg-blue-600 tadka-text-white tadka-hover:bg-blue-700">Primary</button>
-          <button class="tadka-px-4 tadka-py-2 tadka-rounded tadka-bg-slate-100 tadka-border tadka-border-slate-300 tadka-hover:bg-slate-200">Secondary</button>
-          <button class="tadka-px-4 tadka-py-2 tadka-rounded tadka-bg-emerald-600 tadka-text-white tadka-ring-2">Ring</button>
-          <button disabled class="tadka-px-4 tadka-py-2 tadka-rounded tadka-bg-slate-300 tadka-text-slate-600 tadka-cursor-not-allowed">Disabled</button>
+          <p class="tadka-spicy">tadka-spicy text utility</p>
+          <button class="tadka-btn-4 tadka-bg-masala-500 tadka-text-white">tadka-btn-4 component utility</button>
         </div>
       </section>
 
-      <section id="forms" class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Form Elements</h2>
-        <input class="tadka-w-full tadka-p-3 tadka-border tadka-rounded-md tadka-focus:ring-2 tadka-focus:ring-orange-500 tadka-focus:outline-none" placeholder="Text input" />
-        <select class="tadka-w-full tadka-p-3 tadka-border tadka-rounded-md tadka-focus:ring-2 tadka-focus:ring-blue-500">
-          <option>One</option>
-          <option>Two</option>
-        </select>
-        <label class="tadka-flex tadka-items-center tadka-gap-2"><input type="checkbox" class="tadka-size-4" /> Checkbox</label>
-        <label class="tadka-flex tadka-items-center tadka-gap-2"><input type="radio" name="r" class="tadka-size-4" /> Radio</label>
-        <input type="range" class="tadka-w-full" />
-      </section>
-
-      <section class="tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Animation and Transform Showcase</h2>
-        <div class="tadka-flex tadka-flex-wrap tadka-gap-6">
-          <div class="tadka-size-16 tadka-rounded-full tadka-bg-rose-400 tadka-animate-spin"></div>
-          <div class="tadka-size-16 tadka-rounded-full tadka-bg-cyan-400 tadka-animate-pulse"></div>
-          <div class="tadka-size-16 tadka-rounded-full tadka-bg-amber-400 tadka-animate-bounce"></div>
-          <div class="tadka-size-16 tadka-rounded-full tadka-bg-violet-400 tadka-animate-ping"></div>
-        </div>
-        <div class="tadka-flex tadka-gap-6 tadka-flex-wrap">
-          <div class="tadka-size-20 tadka-bg-sky-200 tadka-rounded tadka-scale-110">scale</div>
-          <div class="tadka-size-20 tadka-bg-sky-300 tadka-rounded tadka-rotate-12">rotate</div>
-          <div class="tadka-size-20 tadka-bg-sky-400 tadka-rounded tadka-translate-y-2">translate</div>
-        </div>
-      </section>
-
-      <section class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
-        <h2 class="tadka-text-2xl tadka-font-bold">Responsive and Interactivity</h2>
-        <div class="tadka-w-full tadka-lg:w-1/2 tadka-xl:w-1/4 tadka-bg-lime-200 tadka-p-4 tadka-rounded">w-full lg:w-1/2 xl:w-1/4</div>
-        <div class="tadka-p-4 tadka-rounded tadka-bg-slate-100">
-          <span class="tadka-text-slate-500 tadka-hover:text-orange-600">Hover this text</span>
-        </div>
-        <button class="tadka-bg-orange-500 tadka-text-white tadka-px-4 tadka-py-2 tadka-rounded tadka-hover:bg-orange-700 tadka-active:scale-95">Hover / active</button>
-      </section>
-
-      <section class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-3">
-        <h2 class="tadka-text-2xl tadka-font-bold">Custom Utilities Demo</h2>
-        <p class="tadka-spicy">Static custom utility: tadka-spicy</p>
-        <button class="tadka-btn-4 tadka-bg-masala-500 tadka-text-white">Dynamic custom utility: tadka-btn-4</button>
-      </section>
-
-      <section id="playground" class="tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6">
-        <h2 class="tadka-text-2xl tadka-font-bold">Playground Link</h2>
-        <a class="tadka-text-blue-600 tadka-underline" href="./playground/index.html">Open interactive playground</a>
+      <section id="playground" class="tadka-bg-slate-900 tadka-rounded-2xl tadka-shadow-xl tadka-p-7 tadka-flex tadka-flex-col tadka-gap-3">
+        <h3 class="tadka-text-2xl tadka-font-black tadka-text-white">Interactive Playground</h3>
+        <p class="tadka-text-slate-300">Test class names live and inspect generated style objects.</p>
+        <a class="tadka-bg-orange-600 tadka-text-white tadka-rounded-lg tadka-px-5 tadka-py-3 tadka-font-semibold tadka-hover:bg-orange-700 tadka-w-fit" href="./playground/index.html">Open playground</a>
       </section>
     </main>
 
-    <footer id="footer" class="tadka-mt-16 tadka-bg-slate-900 tadka-text-slate-200 tadka-py-10">
-      <div class="tadka-max-w-7xl tadka-mx-auto tadka-px-4 tadka-flex tadka-flex-col tadka-md:flex-row tadka-justify-between tadka-gap-4">
-        <p>Built with tadka-css</p>
+    <footer class="tadka-mt-10 tadka-bg-white tadka-border tadka-border-slate-200 tadka-py-8">
+      <div class="tadka-max-w-7xl tadka-mx-auto tadka-px-4 tadka-flex tadka-flex-col tadka-md:flex-row tadka-justify-between tadka-items-center tadka-gap-3">
+        <p class="tadka-text-sm tadka-text-slate-500">Built by ashaaf_khan • tadka-css</p>
         <div class="tadka-flex tadka-gap-4">
-          <a href="https://github.com" class="tadka-hover:text-white">GitHub</a>
-          <a href="https://npmjs.com/package/tadka-css" class="tadka-hover:text-white">npm</a>
-          <a href="https://x.com" class="tadka-hover:text-white">Twitter/X</a>
+          <a href="https://github.com/ashaafkhan/tadka-css" class="tadka-text-slate-700 tadka-hover:text-orange-700">GitHub</a>
+          <a href="https://www.npmjs.com/package/tadka-css" class="tadka-text-slate-700 tadka-hover:text-orange-700">npm</a>
+          <a href="https://x.com" class="tadka-text-slate-700 tadka-hover:text-orange-700">Twitter/X</a>
         </div>
       </div>
     </footer>
@@ -199,16 +194,14 @@ TadkaCSS.init();</code></pre>
         },
       });
 
-      const families = [
-        "slate","gray","zinc","neutral","stone","red","orange","amber","yellow","lime","green","emerald","teal","cyan","sky","blue","indigo","violet","purple","fuchsia","pink","rose"
-      ];
-      const shades = ["50","100","200","300","400","500","600","700","800","900","950"];
+      const families = ["orange", "amber", "lime", "emerald", "sky", "indigo", "violet", "rose"];
+      const shades = ["100", "300", "500", "700"];
       const palette = document.getElementById("palette-grid");
 
       families.forEach((family) => {
         shades.forEach((shade) => {
           const swatch = document.createElement("div");
-          swatch.className = `tadka-h-20 tadka-rounded tadka-bg-${family}-${shade} tadka-flex tadka-items-end tadka-p-2 tadka-text-xs tadka-font-semibold tadka-text-white tadka-hover:scale-105 tadka-transition-transform`;
+          swatch.className = `tadka-h-24 tadka-rounded-lg tadka-bg-${family}-${shade} tadka-flex tadka-items-end tadka-p-2 tadka-text-xs tadka-font-semibold tadka-text-white tadka-hover:scale-105 tadka-transition-transform`;
           swatch.textContent = `${family}-${shade}`;
           palette.appendChild(swatch);
         });
