@@ -142,8 +142,8 @@ npm test
 
 ## Demo
 
-- Main demo (GitHub Pages): https://ashaafkhan.github.io/tadka-css/
-- Playground (GitHub Pages): https://ashaafkhan.github.io/tadka-css/playground/
+- Main demo (Live): https://tadkacss.vercel.app/
+- Playground (Live): https://tadkacss.vercel.app/playground/
 - Main demo source: https://github.com/ashaafkhan/tadka-css/blob/main/demo/index.html
 - Playground source: https://github.com/ashaafkhan/tadka-css/blob/main/demo/playground/index.html
 
