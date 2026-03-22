@@ -14,24 +14,13 @@
           <span class="tadka-text-xl tadka-font-black tadka-theme-heading">tadka-css</span>
         </a>
 
-        <div class="tadka-hidden tadka-md:flex tadka-items-center tadka-gap-6">
+        <div class="tadka-flex tadka-items-center tadka-gap-6 tadka-flex-wrap">
           <a href="#install" class="tadka-theme-muted tadka-hover:text-orange-600">Install</a>
           <a href="#components" class="tadka-theme-muted tadka-hover:text-orange-600">Components</a>
           <a href="#palette" class="tadka-theme-muted tadka-hover:text-orange-600">Palette</a>
           <a href="#playground" class="tadka-theme-muted tadka-hover:text-orange-600">Playground</a>
         </div>
-
-        <div class="tadka-flex tadka-items-center tadka-gap-2">
-          <button id="menu-btn" class="tadka-md:hidden tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted">Menu</button>
-        </div>
       </nav>
-
-      <div id="mobile-menu" class="tadka-hidden tadka-px-4 tadka-pb-4 tadka-flex tadka-flex-col tadka-gap-2 tadka-theme-surface">
-        <a href="#install" class="tadka-theme-muted">Install</a>
-        <a href="#components" class="tadka-theme-muted">Components</a>
-        <a href="#palette" class="tadka-theme-muted">Palette</a>
-        <a href="#playground" class="tadka-theme-muted">Playground</a>
-      </div>
     </header>
 
     <main id="top" class="tadka-max-w-7xl tadka-mx-auto tadka-px-4 tadka-py-8 tadka-md:p-8 tadka-flex tadka-flex-col tadka-gap-8">
@@ -166,14 +155,6 @@ TadkaCSS.init();</code></pre>
     </footer>
 
     <script>
-      const btn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      btn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("tadka-hidden");
-        TadkaCSS.refresh();
-      });
-
       const sharedExtend = {
         spicy: { color: "#E8550A", fontWeight: "800", letterSpacing: "0.03em" },
         btn: (value) => ({
