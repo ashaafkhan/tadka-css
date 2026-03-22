@@ -142,8 +142,10 @@ npm test
 
 ## Demo
 
-- Main demo: [demo/index.html](demo/index.html)
-- Playground: [demo/playground/index.html](demo/playground/index.html)
+- Main demo (GitHub Pages): https://ashaafkhan.github.io/tadka-css/
+- Playground (GitHub Pages): https://ashaafkhan.github.io/tadka-css/playground/
+- Main demo source: https://github.com/ashaafkhan/tadka-css/blob/main/demo/index.html
+- Playground source: https://github.com/ashaafkhan/tadka-css/blob/main/demo/playground/index.html
 
 ## Contributing
 
