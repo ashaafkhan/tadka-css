@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/tadka-css)
 ![license](https://img.shields.io/npm/l/tadka-css)
 ![bundlephobia](https://img.shields.io/bundlephobia/minzip/tadka-css)
-![stars](https://img.shields.io/github/stars/your-username/tadka-css?style=social)
+![stars](https://img.shields.io/github/stars/ashaafkhan/tadka-css?style=social)
 
 Add spice to your styles. Utility-first CSS engine in vanilla JS.
 
@@ -133,7 +133,7 @@ TadkaCSS.init({
 ## Development
 
 ```bash
-git clone https://github.com/your-username/tadka-css.git
+git clone https://github.com/ashaafkhan/tadka-css.git
 cd tadka-css
 npm install
 npm run build
