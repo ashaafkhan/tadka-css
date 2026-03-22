@@ -85,7 +85,7 @@ Examples:
 <div class="tadka-p-4 tadka-bg-orange-500 tadka-md:w-1/2 tadka-hover:scale-105"></div>
 ```
 
-## Supported Attributes (From Codebase)
+## Supported Attributes 
 
 This list reflects currently implemented resolver support.
 
