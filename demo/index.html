@@ -22,8 +22,7 @@
         </div>
 
         <div class="tadka-flex tadka-items-center tadka-gap-2">
-          <button id="theme-masala" class="tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted tadka-hover:bg-orange-50">Masala</button>
-          <button id="theme-claude" class="tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted tadka-hover:bg-slate-200">Claude Dark</button>
+          <button id="theme-masala" class="tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted tadka-hover:bg-orange-50">Masala Theme</button>
           <button id="menu-btn" class="tadka-md:hidden tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted">Menu</button>
         </div>
       </nav>
@@ -171,7 +170,6 @@ TadkaCSS.init();</code></pre>
       const btn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
       const masalaBtn = document.getElementById("theme-masala");
-      const claudeBtn = document.getElementById("theme-claude");
 
       btn.addEventListener("click", () => {
         mobileMenu.classList.toggle("tadka-hidden");
@@ -199,19 +197,8 @@ TadkaCSS.init();</code></pre>
         "theme-border": { borderColor: "#e2e8f0" },
       };
 
-      const claudeTheme = {
-        "theme-bg": { backgroundColor: "#161618" },
-        "theme-text": { color: "#e8e8ea" },
-        "theme-surface": { backgroundColor: "#1f2024" },
-        "theme-card": { backgroundColor: "#23252b" },
-        "theme-soft": { backgroundColor: "#2a2d34" },
-        "theme-muted": { color: "#a9aab3" },
-        "theme-heading": { color: "#f2f3f5" },
-        "theme-border": { borderColor: "#32353d" },
-      };
-
-      function applyTheme(mode) {
-        const themeExtend = mode === "claude" ? claudeTheme : masalaTheme;
+      function applyTheme() {
+        const themeExtend = masalaTheme;
         TadkaCSS.setConfig({
           extend: {
             ...sharedExtend,
@@ -238,8 +225,7 @@ TadkaCSS.init();</code></pre>
         TadkaCSS.init({ watch: true });
       }
 
-      masalaBtn.addEventListener("click", () => applyTheme("masala"));
-      claudeBtn.addEventListener("click", () => applyTheme("claude"));
+      masalaBtn.addEventListener("click", () => applyTheme());
 
       const families = ["orange", "amber", "lime", "emerald", "sky", "indigo", "violet", "rose"];
       const shades = ["100", "300", "500", "700"];
@@ -254,7 +240,7 @@ TadkaCSS.init();</code></pre>
         });
       });
 
-      applyTheme("masala");
+      applyTheme();
     </script>
   </body>
 </html>
