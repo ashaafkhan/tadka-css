@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tadka-css • Masala + Claude Theme</title>
+    <title>tadka-css Showcase</title>
     <script src="https://unpkg.com/tadka-css/dist/tadka-css.js"></script>
   </head>
   <body id="app-body" class="tadka-theme-bg tadka-theme-text tadka-min-h-screen tadka-leading-relaxed">
@@ -22,7 +22,6 @@
         </div>
 
         <div class="tadka-flex tadka-items-center tadka-gap-2">
-          <button id="theme-masala" class="tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted tadka-hover:bg-orange-50">Masala Theme</button>
           <button id="menu-btn" class="tadka-md:hidden tadka-px-3 tadka-py-2 tadka-rounded tadka-border tadka-theme-border tadka-theme-muted">Menu</button>
         </div>
       </nav>
@@ -41,7 +40,7 @@
           <div class="tadka-flex tadka-flex-col tadka-gap-4">
             <p class="tadka-text-sm tadka-font-bold tadka-uppercase tadka-text-orange-800">Utility-first CSS engine</p>
             <h1 class="tadka-text-4xl tadka-md:text-6xl tadka-font-black tadka-leading-tight tadka-text-orange-900">Professional UI from plain HTML.</h1>
-            <p class="tadka-text-lg tadka-text-orange-900">Switch between a warm Indian Masala look and a clean Claude-style dark interface in one click.</p>
+            <p class="tadka-text-lg tadka-text-orange-900">Build modern interfaces directly from utility class names, with no separate stylesheet setup.</p>
             <div class="tadka-flex tadka-gap-3 tadka-flex-wrap tadka-mt-2">
               <a href="#install" class="tadka-bg-orange-600 tadka-text-white tadka-px-5 tadka-py-3 tadka-rounded-lg tadka-font-semibold tadka-hover:bg-orange-700">Start in 10 seconds</a>
               <a href="#playground" class="tadka-bg-white tadka-border tadka-border-orange-300 tadka-text-orange-800 tadka-px-5 tadka-py-3 tadka-rounded-lg tadka-font-semibold tadka-hover:bg-orange-50">Open playground</a>
@@ -106,7 +105,7 @@ TadkaCSS.init();</code></pre>
       <section id="palette" class="tadka-theme-card tadka-rounded-2xl tadka-shadow tadka-p-6 tadka-flex tadka-flex-col tadka-gap-4">
         <div class="tadka-flex tadka-items-center tadka-justify-between tadka-flex-wrap tadka-gap-2">
           <h3 class="tadka-text-2xl tadka-font-black tadka-theme-heading">Color Gallery</h3>
-          <p class="tadka-text-sm tadka-theme-muted">Warm masala accents + modern cool tones.</p>
+          <p class="tadka-text-sm tadka-theme-muted">Curated swatches to preview the built-in utility color system.</p>
         </div>
         <div id="palette-grid" class="tadka-grid tadka-grid-cols-2 tadka-sm:grid-cols-4 tadka-md:grid-cols-8 tadka-gap-3"></div>
       </section>
@@ -169,7 +168,6 @@ TadkaCSS.init();</code></pre>
     <script>
       const btn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
-      const masalaBtn = document.getElementById("theme-masala");
 
       btn.addEventListener("click", () => {
         mobileMenu.classList.toggle("tadka-hidden");
@@ -197,7 +195,7 @@ TadkaCSS.init();</code></pre>
         "theme-border": { borderColor: "#e2e8f0" },
       };
 
-      function applyTheme() {
+      function applyDefaultStyles() {
         const themeExtend = masalaTheme;
         TadkaCSS.setConfig({
           extend: {
@@ -225,8 +223,6 @@ TadkaCSS.init();</code></pre>
         TadkaCSS.init({ watch: true });
       }
 
-      masalaBtn.addEventListener("click", () => applyTheme());
-
       const families = ["orange", "amber", "lime", "emerald", "sky", "indigo", "violet", "rose"];
       const shades = ["100", "300", "500", "700"];
       const palette = document.getElementById("palette-grid");
@@ -240,7 +236,7 @@ TadkaCSS.init();</code></pre>
         });
       });
 
-      applyTheme();
+      applyDefaultStyles();
     </script>
   </body>
 </html>
