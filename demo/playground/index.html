@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tadka-css Playground</title>
+    <script src="../../dist/tadka-css.js"></script>
+  </head>
+  <body class="tadka-bg-slate-100 tadka-p-6">
+    <main class="tadka-max-w-3xl tadka-mx-auto tadka-bg-white tadka-rounded-xl tadka-shadow tadka-p-6 tadka-space-y-4">
+      <h1 class="tadka-text-3xl tadka-font-bold">tadka-css Playground</h1>
+      <p class="tadka-text-slate-600">Type classes and preview instantly.</p>
+      <input id="class-input" class="tadka-w-full tadka-border tadka-rounded tadka-p-3" value="tadka-p-6 tadka-bg-orange-500 tadka-text-white tadka-rounded-xl" />
+      <div id="preview" class="tadka-min-h-24 tadka-flex tadka-items-center tadka-justify-center">Preview Box</div>
+      <pre id="json" class="tadka-bg-slate-900 tadka-text-green-300 tadka-p-4 tadka-rounded tadka-overflow-auto"></pre>
+    </main>
+
+    <script>
+      const input = document.getElementById("class-input");
+      const preview = document.getElementById("preview");
+      const output = document.getElementById("json");
+
+      function render() {
+        preview.className = input.value;
+        preview.textContent = "Preview Box";
+        TadkaCSS.apply(preview);
+
+        const classes = input.value.split(/\s+/).filter(Boolean);
+        const obj = {};
+        classes.forEach((c) => {
+          obj[c] = TadkaCSS.parse(c);
+        });
+        output.textContent = JSON.stringify(obj, null, 2);
+      }
+
+      input.addEventListener("input", render);
+      render();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "tadka-css",
+  "version": "1.0.0",
+  "description": "Utility-first CSS engine for the DOM. Add spice to your styles.",
+  "main": "dist/tadka-css.cjs.js",
+  "module": "dist/tadka-css.esm.js",
+  "browser": "dist/tadka-css.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/tadka-css.esm.js",
+      "require": "./dist/tadka-css.cjs.js"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "css",
+    "utility",
+    "tailwind",
+    "dom",
+    "styling",
+    "tadka",
+    "zero-dependency"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "jsdom": "^29.0.1",
+    "rollup": "^4.59.1",
+    "rollup-plugin-dts": "^6.4.1",
+    "vitest": "^4.1.0"
+  }
+}

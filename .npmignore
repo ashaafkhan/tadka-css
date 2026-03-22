@@ -1,0 +1,11 @@
+src/
+tests/
+demo/
+coverage/
+*.test.js
+*.config.js
+rollup.config.js
+.eslintrc*
+.github/
+node_modules/
+*.log
