@@ -2,14 +2,8 @@
 
 Add spice to your styles. Utility-first CSS engine in vanilla JS.
 
-![npm](https://img.shields.io/npm/v/tadka-css?label=npm)
-![npm downloads](https://img.shields.io/npm/dm/tadka-css)
-![license](https://img.shields.io/npm/l/tadka-css)
-![bundlephobia](https://img.shields.io/bundlephobia/minzip/tadka-css)
-![github stars](https://img.shields.io/github/stars/ashaafkhan/tadka-css)
-
 - npm: https://www.npmjs.com/package/tadka-css
-- GitHub: https://github.com/ashaafkhan/tadka-css
+- GitHub repository: https://github.com/ashaafkhan/tadka-css
 - Live Demo: https://tadkacss.vercel.app/
 - Playground: https://tadkacss.vercel.app/playground/
 
